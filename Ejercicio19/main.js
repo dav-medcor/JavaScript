@@ -20,10 +20,11 @@ const inputRandom = document.querySelector ("#random");
 inputRandom.addEventListener ("keydown", comprobarLetra);
 function comprobarLetra (event) {
     const letra = event.which;
-//No doy con los códigos de letra adecuados
-    if (letra === 20 || letra === 16) {
+//Con las vocales cambiará el color a amarillo
+    if (letra === 65 || letra === 69 || letra === 73|| letra === 79|| letra === 85) {
         inputRandom.style.backgroundColor = "#fff666";
     } else {
+//Con las consonantes cambiará el color a verde
         inputRandom.style.backgroundColor = "#32a836";
     }
 };
