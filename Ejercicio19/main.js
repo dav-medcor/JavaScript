@@ -17,10 +17,10 @@ inputName.addEventListener ("focusout", function changeColorOut(){
 })
 
 const inputRandom = document.querySelector ("#random");
-inputRandom.addEventListener ("keypress", comprobarLetra);
+inputRandom.addEventListener ("keydown", comprobarLetra);
 function comprobarLetra (event) {
     const letra = event.which;
-    if (letra === 97 || letra === 101 || letra === 105 || letra === 111 ||letra === 117) {
+    if (letra === 20 || letra === 16) {
         inputRandom.style.backgroundColor = "#fff666";
     } else {
         inputRandom.style.backgroundColor = "#32a836";
