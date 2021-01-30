@@ -38,10 +38,10 @@ console.log ("Prueba de un código alternativo:")
 
 const winner2 = scores.reduce ((acc, cValue) => {
     if (acc.time < cValue.time) {
-        console.log ("Devuelvo", acc.time)
+        console.log ("Devuelvo acc", acc.time)
         return acc.time
     } else {
-        console.log ("Devuelvo", cValue.time)
+        console.log ("Devuelvo current Value", cValue.time)
         return cValue.time
     }
 }, scores[0]);
